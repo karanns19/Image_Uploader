@@ -1,0 +1,23 @@
+<body>
+    <div class="ImgContainer" *ngIf="displayPages[0]">
+        <h2>Upload your image</h2>
+        <span>File should be Jpeg, Png,...</span><br>
+        <label for="upload-photo">Choose a file</label>
+        <input type="file" name="photo" id="upload-photo" (change)="onSelectFile($event)" />
+    </div>
+    <div class="ImgContainer" *ngIf="displayPages[1]">
+        <h2 style="text-align: left;">Uploading...</h2>
+        <input type="range" class="range">
+    </div>
+    <div class="ImgContainer" *ngIf="displayPages[2]">
+        <img src="assets/checked.png" width="50" height="50" style="margin-bottom: 10px;" alt="">
+        <h2>Uploaded Successfully!</h2>
+        <div class="Imgs">
+            <img [src]="url" style="width: 100%; height: 100%; border-radius: 10px;">
+        </div>
+        <div class="btnFooter">
+            <span>{{url}}</span>
+            <button (click)="copyText()">Copy Link</button>
+        </div>
+    </div>
+</body>

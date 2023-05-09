@@ -1,0 +1,113 @@
+.ImgContainer{
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.ImgContainer h2{
+    font-size: 26px;
+    font-weight: 500;
+    color: rgba(79, 79, 79, 1);
+}
+
+.ImgContainer span{
+    font-size: 14px;
+    color: rgba(79, 79, 79, 1);
+}
+
+.ImgUploader{
+    padding: 15%;
+    margin: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 10px;
+    background-color: rgba(151, 190, 244, 0.2);
+    text-align: center;
+    border: 2px dashed rgba(151, 190, 244, 1);
+    cursor: pointer;
+}
+
+button{
+    margin-top: 3%;
+    background-color: rgba(47, 128, 237, 1);
+    padding: 10px 24px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btnFooter{
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(224, 224, 224, 0.25);
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.btnFooter button{
+    float: right;
+    margin: 0px;
+}
+
+.Imgs{
+    width: 100%;
+    height: 350px;
+    border: 1px solid rgba(128, 128, 128, 0.449);
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+label {
+    cursor: pointer;
+    background-color: rgba(47, 128, 237, 1);
+    padding: 10px 24px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+ 
+#upload-photo {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.btnFooter span{
+    float: left; width: 80%; overflow: scroll;font-size: 16px;
+    margin-top: 10px;
+    margin-left: 1%;
+}
+
+input[type='range'] {
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    margin-top: 3%;
+    border-radius: 5px;
+    -webkit-appearance: none;
+}
+  
+input[type='range']::-webkit-slider-runnable-track {
+    height: 8px;
+    -webkit-appearance: none;
+    background: white;
+    margin-top: -1px;
+}
+  
+.range::-webkit-slider-thumb {
+    width: 0px;
+    -webkit-appearance: none;
+    height: 0px;
+    cursor: ew-resize;
+    box-shadow: -300px 0 0 500px #0088FF;
+}
